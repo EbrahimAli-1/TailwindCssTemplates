@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ul li {
+  @apply p-4 hover:text-primary-softRed hover:font-medium sm:hover:scale-110 after:w-full after:h-px after:bg-primary-softRed after:bottom-0 after:right-0 after:absolute relative duration-300 after:hidden hover:after:block;
+}
+
+.side h2 {
+  @apply text-2xl font-semibold my-2;
+}
+
+.side p {
+  @apply text-neutral-darkGrayishBlue text-lg;
+}
+
+.newsBox {
+  @apply mb-16 sm:mb-24 after:w-full after:h-px after:bg-neutral-darkGrayishBlue relative after:absolute after:-bottom-8 sm:after:-bottom-12;
+}
+
+.card {
+  @apply grid grid-cols-3 gap-6 sm:gap-0 my-8 sm:my-0;
+}
+
+.card .img {
+  @apply h-40;
+}
+
+.card h1 {
+  @apply text-3xl sm:text-4xl text-neutral-grayishBlue font-semibold;
+}
+
+.card h2 {
+  @apply text-xl text-neutral-veryDarkBlue my-4 font-extrabold;
+}
+
+.card p {
+  @apply text-base text-neutral-darkGrayishBlue my-4 font-medium leading-relaxed pr-4 sm:pr-45px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="Font-Awesome/Css/all.min.css" />
+  </head>
+  <body class="font-Inter text-15px flex justify-center">
+    <div
+      class="container px-6 sm:px-20 flex flex-col justify-center my-8 sm:my-10"
+    >
+      <header class="">
+        <div class="flex flex-col sm:flex-row">
+          <div class="flex w-full justify-between items-center my-4 sm:my-0">
+            <div>
+              <img src="logo.svg" alt="" />
+            </div>
+            <svg
+              class="sm:hidden cursor-pointer"
+              id="menu"
+              width="40"
+              height="17"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="#00001A" fill-rule="evenodd">
+                <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+                <path d="M0 0h40v3H0z" />
+              </g>
+            </svg>
+          </div>
+          <div>
+            <ul class="sm:flex text-neutral-darkGrayishBlue hidden" id="links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">New</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Trending</a></li>
+              <li><a href="#">Categories</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main class="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 my-10">
+        <div class="col-span-2 grid grid-cols-1 sm:grid-cols-2 sm:gap-10">
+          <div class="sm:col-span-2 h-80 sm:h-full">
+            <img
+              class="h-full object-cover"
+              src="image-web-3-desktop.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="text-5xl sm:text-7xl my-6 sm:my-0 font-extrabold text-neutral-veryDarkBlue"
+          >
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+          <div>
+            <p
+              class="text-neutral-darkGrayishBlue sm:w-5/6 text-lg sm:text-base"
+            >
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it realy fulfilling its promise?
+            </p>
+            <div
+              class="px-10 py-4 bg-primary-softRed text-white my-6 sm:mt-14 sm:my-0 uppercase w-fit tracking-0.2 font-medium cursor-pointer shadow-outside hover:shadow-inside hover:scale-105 transform duration-300 hover:opacity-90"
+            >
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="h-full bg-neutral-veryDarkBlue text-white p-4 sm:p-8 side">
+          <h1
+            class="text-4xl sm:text-5xl font-semibold text-primary-softOrange mb-8"
+          >
+            New
+          </h1>
+          <div class="newsBox">
+            <h2>Hydrogen VS Electric Cars</h2>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="newsBox">
+            <h2>The Downsides of AI Artistry</h2>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="mb-6 sm:mb-0">
+            <h2>Is VC Funding Drying Up?</h2>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </div>
+      </main>
+      <footer class="sm:grid grid-cols-3 gap-10 my-10">
+        <div class="card">
+          <div>
+            <img class="img" src="image-retro-pcs.jpg" alt="" />
+          </div>
+          <div class="col-span-2">
+            <h1>01</h1>
+            <h2 class="">Reviving Retro PCs</h2>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img class="img" src="image-top-laptops.jpg" alt="" />
+          </div>
+          <div class="col-span-2">
+            <h1>02</h1>
+            <h2>Top 10 Laptops of 2022</h2>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img class="img" src="image-gaming-growth.jpg" alt="" />
+          </div>
+          <div class="col-span-2">
+            <h1>03</h1>
+            <h2>the Growth of Gaming</h2>
+            <p>How the pandemic has sparked fresh oppurtunities.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
