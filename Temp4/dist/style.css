@@ -596,10 +596,6 @@ video {
   display: none;
 }
 
-.h-0{
-  height: 0px;
-}
-
 .w-fit{
   width: -moz-fit-content;
   width: fit-content;
@@ -659,14 +655,6 @@ video {
 
 .gap-20{
   gap: 5rem;
-}
-
-.overflow-auto{
-  overflow: auto;
-}
-
-.overflow-hidden{
-  overflow: hidden;
 }
 
 .rounded-2xl{
@@ -777,14 +765,6 @@ video {
   transition-duration: 150ms;
 }
 
-.transition{
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .duration-300{
   transition-duration: 300ms;
 }
@@ -855,7 +835,6 @@ ul li:hover::after{
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     --tw-text-opacity: 1;
     color: hsl(0 0% 41% / var(--tw-text-opacity));
-    transition-duration: 300ms;
   }
 
   ul li:hover::after{
@@ -965,6 +944,10 @@ ul li div{
   }
 }
 
+.top-0{
+  top: 0px;
+}
+
 .after\:w-0::after{
   content: var(--tw-content);
   width: 0px;
@@ -1001,10 +984,6 @@ ul li div{
 
   .md\:top-0{
     top: 0px;
-  }
-
-  .md\:z-0{
-    z-index: 0;
   }
 
   .md\:mx-0{
@@ -1045,15 +1024,6 @@ ul li div{
     display: none;
   }
 
-  .md\:h-full{
-    height: 100%;
-  }
-
-  .md\:h-fit{
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-
   .md\:w-fit{
     width: -moz-fit-content;
     width: fit-content;
@@ -1077,14 +1047,6 @@ ul li div{
 
   .md\:gap-8{
     gap: 2rem;
-  }
-
-  .md\:overflow-auto{
-    overflow: auto;
-  }
-
-  .md\:overflow-visible{
-    overflow: visible;
   }
 
   .md\:bg-white{
