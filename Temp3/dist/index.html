@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="output.css" />
-    <link rel="stylesheet" href="Font-Awesome/Css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="font-Inter text-15px flex justify-center">
     <div
-      class="container px-6 sm:px-20 flex flex-col justify-center my-8 sm:my-10"
+      class="container px-6 sm:px-0 flex flex-col justify-center my-8 sm:my-10"
     >
       <header class="">
         <div class="flex flex-col sm:flex-row">
@@ -41,9 +40,9 @@
           </div>
         </div>
       </header>
-      <main class="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 my-10">
-        <div class="col-span-2 grid grid-cols-1 sm:grid-cols-2 sm:gap-10">
-          <div class="sm:col-span-2 h-80 sm:h-full">
+      <main class="grid grid-cols-1 md:grid-cols-3 md:gap-2 lg:gap-10 my-10">
+        <div class="col-span-2 grid grid-cols-1 md:grid-cols-2 md:gap-10">
+          <div class="md:col-span-2 h-80 sm:h-fit md:h-full lg:h-full">
             <img
               class="h-full object-cover"
               src="image-web-3-desktop.jpg"
@@ -51,28 +50,30 @@
             />
           </div>
           <div
-            class="text-5xl sm:text-7xl my-6 sm:my-0 font-extrabold text-neutral-veryDarkBlue"
+            class="text-5xl lg:text-6xl xl:text-7xl my-6 md:my-0 font-extrabold text-neutral-veryDarkBlue"
           >
             <h1>The Bright Future of Web 3.0?</h1>
           </div>
           <div>
             <p
-              class="text-neutral-darkGrayishBlue sm:w-5/6 text-lg sm:text-base"
+              class="text-neutral-darkGrayishBlue sm:w-5/6 md:w-full xl:w-5/6 text-lg md:text-base xl:text-lg my-0"
             >
               We dive into the next evolution of the web that claims to put the
               power of the platforms back into the hands of the people. But is
               it realy fulfilling its promise?
             </p>
             <div
-              class="px-10 py-4 bg-primary-softRed text-white my-6 sm:mt-14 sm:my-0 uppercase w-fit tracking-0.2 font-medium cursor-pointer shadow-outside hover:shadow-inside hover:scale-105 transform duration-300 hover:opacity-90"
+              class="px-12 py-4 bg-primary-softRed text-lg md:text-sm text-white mt-6 mb-16 md:mt-16 md:my-0 uppercase w-fit tracking-0.2 font-medium cursor-pointer shadow-outside hover:shadow-inside hover:scale-105 transform duration-300 hover:opacity-90"
             >
               <a href="#">Read More</a>
             </div>
           </div>
         </div>
-        <div class="h-full bg-neutral-veryDarkBlue text-white p-4 sm:p-8 side">
+        <div
+          class="bg-neutral-veryDarkBlue text-white p-6 sm:px-8 sm:py-10 md:p-6 lg:p-8 xl:p-12"
+        >
           <h1
-            class="text-4xl sm:text-5xl font-semibold text-primary-softOrange mb-8"
+            class="text-4xl sm:text-5xl md:text-3xl lg:text-4xl font-semibold text-primary-softOrange mb-8 sm:mb-10 md:mb-6 lg:mb-8 xl:mb-12"
           >
             New
           </h1>
@@ -87,21 +88,28 @@
               generation?
             </p>
           </div>
-          <div class="mb-6 sm:mb-0">
-            <h2>Is VC Funding Drying Up?</h2>
-            <p>
+          <div>
+            <h2
+              class="font-semibold my-2 text-xl sm:text-2xl md:text-xl xl:text-3xl"
+            >
+              Is VC Funding Drying Up?
+            </h2>
+            <p
+              class="text-base sm:text-lg xl:text-xl text-neutral-darkGrayishBlue"
+            >
               Private funding by VC firms is down 50% YOY. We take a look at
               what that means.
             </p>
           </div>
         </div>
       </main>
-      <footer class="sm:grid grid-cols-3 gap-10 my-10">
+      <hr class="xl:hidden border" />
+      <footer class="xl:grid grid-cols-3 gap-10 xl:gap-0 my-10">
         <div class="card">
           <div>
             <img class="img" src="image-retro-pcs.jpg" alt="" />
           </div>
-          <div class="col-span-2">
+          <div class="col-span-2 title">
             <h1>01</h1>
             <h2 class="">Reviving Retro PCs</h2>
             <p>What happens when old PCs are given modern upgrades?</p>
@@ -111,7 +119,7 @@
           <div>
             <img class="img" src="image-top-laptops.jpg" alt="" />
           </div>
-          <div class="col-span-2">
+          <div class="col-span-2 title">
             <h1>02</h1>
             <h2>Top 10 Laptops of 2022</h2>
             <p>Our best picks for various needs and budgets.</p>
@@ -121,7 +129,7 @@
           <div>
             <img class="img" src="image-gaming-growth.jpg" alt="" />
           </div>
-          <div class="col-span-2">
+          <div class="col-span-2 title">
             <h1>03</h1>
             <h2>the Growth of Gaming</h2>
             <p>How the pandemic has sparked fresh oppurtunities.</p>

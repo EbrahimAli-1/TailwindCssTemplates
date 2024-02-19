@@ -4,27 +4,31 @@
 @tailwind utilities;
 
 ul li {
-  @apply p-4 hover:text-primary-softRed hover:font-medium sm:hover:scale-110 after:w-full after:h-px after:bg-primary-softRed after:bottom-0 after:right-0 after:absolute relative duration-300 after:hidden hover:after:block;
-}
-
-.side h2 {
-  @apply text-2xl font-semibold my-2;
-}
-
-.side p {
-  @apply text-neutral-darkGrayishBlue text-lg;
+  @apply p-4 cursor-pointer hover:text-primary-softRed hover:font-medium transform sm:hover:scale-110 hover:translate-x-2 sm:hover:translate-x-0 after:w-full after:h-px after:bg-primary-softRed after:bottom-0 after:right-0 after:absolute relative duration-300 after:hidden hover:after:block;
 }
 
 .newsBox {
-  @apply mb-16 sm:mb-24 after:w-full after:h-px after:bg-neutral-darkGrayishBlue relative after:absolute after:-bottom-8 sm:after:-bottom-12;
+  @apply mb-16 sm:mb-24 md:mb-16 xl:mb-24 after:w-full after:h-px after:bg-neutral-darkGrayishBlue relative after:absolute after:-bottom-8 sm:after:-bottom-12 md:after:-bottom-8 xl:after:-bottom-12;
+}
+
+.newsBox h2 {
+  @apply text-xl font-semibold my-2 sm:text-2xl md:text-xl xl:text-3xl;
+}
+
+.newsBox p {
+  @apply text-base sm:text-lg xl:text-xl text-neutral-darkGrayishBlue;
 }
 
 .card {
-  @apply grid grid-cols-3 gap-6 sm:gap-0 my-8 sm:my-0;
+  @apply grid grid-cols-3  items-center gap-6 xl:gap-0 mb-8 xl:mb-0;
 }
 
 .card .img {
-  @apply h-40;
+  @apply h-40  object-cover;
+}
+
+.card .title {
+  @apply mx-2 xl:mx-0;
 }
 
 .card h1 {
@@ -32,7 +36,7 @@ ul li {
 }
 
 .card h2 {
-  @apply text-xl text-neutral-veryDarkBlue my-4 font-extrabold;
+  @apply text-xl md:text-lg text-neutral-veryDarkBlue my-4 font-extrabold;
 }
 
 .card p {
