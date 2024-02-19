@@ -566,19 +566,6 @@ video {
   z-index: 10;
 }
 
-.col-span-2{
-  grid-column: span 2 / span 2;
-}
-
-.m-1{
-  margin: 0.25rem;
-}
-
-.my-10{
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .my-12{
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -587,21 +574,6 @@ video {
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.mx-1{
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-
-.mx-2{
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.mx-3{
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
 .ml-24{
@@ -624,6 +596,10 @@ video {
   display: none;
 }
 
+.h-0{
+  height: 0px;
+}
+
 .w-fit{
   width: -moz-fit-content;
   width: fit-content;
@@ -631,10 +607,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-1{
-  width: 0.25rem;
 }
 
 .min-w-3{
@@ -655,10 +627,6 @@ video {
 
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -689,19 +657,23 @@ video {
   justify-content: space-evenly;
 }
 
-.gap-10{
-  gap: 2.5rem;
-}
-
 .gap-20{
   gap: 5rem;
+}
+
+.overflow-auto{
+  overflow: auto;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .rounded-2xl{
   border-radius: 1rem;
 }
 
-.bg-Neutral-almostBlack{
+.bg-neutral-almostBlack{
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 8% / var(--tw-bg-opacity));
 }
@@ -711,7 +683,7 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.stroke-Neutral-almostWhite{
+.stroke-neutral-almostWhite{
   stroke: hsl(0, 0%, 98%);
 }
 
@@ -740,17 +712,12 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-14{
-  padding-top: 3.5rem;
+.pb-14{
   padding-bottom: 3.5rem;
 }
 
 .pt-14{
   padding-top: 3.5rem;
-}
-
-.pb-14{
-  padding-bottom: 3.5rem;
 }
 
 .text-center{
@@ -775,16 +742,6 @@ video {
   line-height: 1.5rem;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -798,7 +755,7 @@ video {
   font-weight: 500;
 }
 
-.text-Neutral-mediumGray{
+.text-neutral-mediumGray{
   --tw-text-opacity: 1;
   color: hsl(0 0% 41% / var(--tw-text-opacity));
 }
@@ -812,6 +769,20 @@ video {
   --tw-shadow: 3px 2px 5px -4px #2d2d2d;
   --tw-shadow-colored: 3px 2px 5px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .duration-300{
@@ -1018,14 +989,6 @@ ul li div{
 }
 
 @media (min-width: 640px){
-  .sm\:flex{
-    display: flex;
-  }
-
-  .sm\:grid{
-    display: grid;
-  }
-
   .sm\:items-center{
     align-items: center;
   }
@@ -1074,16 +1037,21 @@ ul li div{
     display: block;
   }
 
-  .md\:inline{
-    display: inline;
-  }
-
   .md\:flex{
     display: flex;
   }
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:h-full{
+    height: 100%;
+  }
+
+  .md\:h-fit{
+    height: -moz-fit-content;
+    height: fit-content;
   }
 
   .md\:w-fit{
@@ -1103,20 +1071,20 @@ ul li div{
     justify-content: space-between;
   }
 
-  .md\:justify-evenly{
-    justify-content: space-evenly;
+  .md\:gap-10{
+    gap: 2.5rem;
   }
 
   .md\:gap-8{
     gap: 2rem;
   }
 
-  .md\:gap-0{
-    gap: 0px;
+  .md\:overflow-auto{
+    overflow: auto;
   }
 
-  .md\:gap-10{
-    gap: 2.5rem;
+  .md\:overflow-visible{
+    overflow: visible;
   }
 
   .md\:bg-white{
@@ -1124,7 +1092,7 @@ ul li div{
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
-  .md\:stroke-Neutral-mediumGray{
+  .md\:stroke-neutral-mediumGray{
     stroke: hsl(0, 0%, 41%);
   }
 
@@ -1207,10 +1175,6 @@ ul li div{
 
   .xl\:h-full{
     height: 100%;
-  }
-
-  .xl\:w-5\/6{
-    width: 83.333333%;
   }
 
   .xl\:max-w-lg{

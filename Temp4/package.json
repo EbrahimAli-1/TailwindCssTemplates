@@ -1,10 +1,10 @@
 {
-  "name": "project3",
+  "name": "project7",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "npx tailwindcss -i ./style.css -o ./src/output.css --watch"
+    "build-css": "npx tailwindcss -i src/style.css -o ./dist/style.css --watch"
   },
   "keywords": [],
   "author": "",
