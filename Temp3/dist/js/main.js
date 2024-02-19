@@ -1,11 +1,21 @@
 let menu = document.getElementById("menu");
 let links = document.getElementById("links");
+let close = document.getElementById("close");
+
 menu.onclick = function () {
-  if (links.classList.contains("hidden")) {
-    links.classList.remove("hidden");
-    links.classList.add("block");
-  } else {
-    links.classList.add("hidden");
-    links.classList.remove("block");
-  }
-}
+  links.classList.remove("-top-[200px]");
+  links.classList.add("top-0");
+  links.classList.add("relative");
+
+  close.classList.remove("hidden");
+  menu.classList.add("hidden");
+};
+
+close.onclick = function () {
+  links.classList.add("-top-[200px]");
+  links.classList.remove("top-0");
+  links.classList.remove("relative");
+
+  close.classList.add("hidden");
+  menu.classList.remove("hidden");
+};

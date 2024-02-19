@@ -580,6 +580,22 @@ video {
   }
 }
 
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.-top-\[200px\]{
+  top: -200px;
+}
+
+.z-10{
+  z-index: 10;
+}
+
 .col-span-2{
   grid-column: span 2 / span 2;
 }
@@ -599,19 +615,9 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .mb-16{
@@ -620,6 +626,10 @@ video {
 
 .mb-8{
   margin-bottom: 2rem;
+}
+
+.ml-24{
+  margin-left: 6rem;
 }
 
 .mt-6{
@@ -687,6 +697,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-evenly{
+  justify-content: space-evenly;
+}
+
 .gap-10{
   gap: 2.5rem;
 }
@@ -705,6 +719,11 @@ video {
   background-color: hsl(5 85% 63% / var(--tw-bg-opacity));
 }
 
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -719,14 +738,13 @@ video {
   padding-right: 3rem;
 }
 
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
 }
 
 .font-Inter{
@@ -787,6 +805,11 @@ video {
   color: hsl(236 13% 42% / var(--tw-text-opacity));
 }
 
+.text-neutral-grayishBlue{
+  --tw-text-opacity: 1;
+  color: hsl(233 8% 79% / var(--tw-text-opacity));
+}
+
 .text-neutral-veryDarkBlue{
   --tw-text-opacity: 1;
   color: hsl(240 100% 5% / var(--tw-text-opacity));
@@ -806,6 +829,12 @@ video {
   --tw-shadow: 3px 2px 5px -4px #2d2d2d;
   --tw-shadow-colored: 3px 2px 5px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .duration-300{
@@ -845,7 +874,7 @@ ul li:hover::after{
   display: block;
 }
 
-@media (min-width: 640px){
+@media (min-width: 768px){
   ul li:hover{
     --tw-translate-x: 0px;
     --tw-scale-x: 1.1;
@@ -1035,6 +1064,10 @@ ul li:hover::after{
   }
 }
 
+.top-0{
+  top: 0px;
+}
+
 .hover\:scale-105:hover{
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1052,26 +1085,8 @@ ul li:hover::after{
 }
 
 @media (min-width: 640px){
-  .sm\:my-0{
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .sm\:my-10{
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-  }
-
   .sm\:mb-10{
     margin-bottom: 2.5rem;
-  }
-
-  .sm\:flex{
-    display: flex;
-  }
-
-  .sm\:hidden{
-    display: none;
   }
 
   .sm\:h-fit{
@@ -1081,15 +1096,6 @@ ul li:hover::after{
 
   .sm\:w-5\/6{
     width: 83.333333%;
-  }
-
-  .sm\:flex-row{
-    flex-direction: row;
-  }
-
-  .sm\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .sm\:px-8{
@@ -1119,6 +1125,14 @@ ul li:hover::after{
 }
 
 @media (min-width: 768px){
+  .md\:relative{
+    position: relative;
+  }
+
+  .md\:top-0{
+    top: 0px;
+  }
+
   .md\:col-span-2{
     grid-column: span 2 / span 2;
   }
@@ -1128,12 +1142,25 @@ ul li:hover::after{
     margin-bottom: 0px;
   }
 
+  .md\:my-10{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
   .md\:mb-6{
     margin-bottom: 1.5rem;
   }
 
   .md\:mt-16{
     margin-top: 4rem;
+  }
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 
   .md\:h-full{
@@ -1152,6 +1179,10 @@ ul li:hover::after{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
   .md\:gap-10{
     gap: 2.5rem;
   }
@@ -1160,8 +1191,18 @@ ul li:hover::after{
     gap: 0.5rem;
   }
 
+  .md\:bg-white{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
   .md\:p-6{
     padding: 1.5rem;
+  }
+
+  .md\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .md\:text-3xl{
@@ -1182,6 +1223,11 @@ ul li:hover::after{
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-neutral-darkGrayishBlue{
+    --tw-text-opacity: 1;
+    color: hsl(236 13% 42% / var(--tw-text-opacity));
   }
 }
 

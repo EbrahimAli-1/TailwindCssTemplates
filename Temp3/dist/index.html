@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="font-Inter text-15px flex justify-center">
-    <div
-      class="container px-6 sm:px-0 flex flex-col justify-center my-8 sm:my-10"
-    >
+    <div class="container flex flex-col justify-center md:my-10">
       <header class="">
-        <div class="flex flex-col sm:flex-row">
-          <div class="flex w-full justify-between items-center my-4 sm:my-0">
+        <div class="flex flex-col md:flex-row relative">
+          <div
+            class="flex w-full justify-between items-center py-4 md:py-0 z-10 bg-white pt-8"
+          >
             <div>
               <img src="logo.svg" alt="" />
             </div>
             <svg
-              class="sm:hidden cursor-pointer"
+              class="md:hidden cursor-pointer"
               id="menu"
               width="40"
               height="17"
@@ -28,9 +28,26 @@
                 <path d="M0 0h40v3H0z" />
               </g>
             </svg>
+            <svg
+              class="hidden md:hidden cursor-pointer ml-24"
+              id="close"
+              width="26"
+              height="26"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="#151515" fill-rule="evenodd">
+                <path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z" />
+                <path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z" />
+              </g>
+            </svg>
           </div>
-          <div>
-            <ul class="sm:flex text-neutral-darkGrayishBlue hidden" id="links">
+          <div
+            class="w-full absolute md:relative -top-[200px] md:top-0 transition-all duration-300"
+            id="links"
+          >
+            <ul
+              class="md:flex justify-evenly bg-neutral-veryDarkBlue md:bg-white text-neutral-grayishBlue md:text-neutral-darkGrayishBlue"
+            >
               <li><a href="#">Home</a></li>
               <li><a href="#">New</a></li>
               <li><a href="#">Popular</a></li>
