@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0 p-0;
+}
+
+.container .article {
+  @apply p-8  md:px-12 xl:px-8 2xl:px-12 rounded-xl relative;
+}
+
+.container .article svg {
+  @apply absolute top-0 right-0 md:right-20;
+}
+
+.container .article .title {
+  @apply flex items-center gap-4 relative z-10;
+}
+
+.container .article .title + div {
+  @apply relative z-10;
+}
+
+.container .article .title img {
+  @apply rounded-full border-Neutral-lightGrayishBlue border-2 border-opacity-30 h-11 md:h-12;
+}
+
+.container .article .title h3 {
+  @apply text-Neutral-lightGray md:text-lg;
+}
+
+.container .article .title p {
+  @apply text-Neutral-lightGray opacity-50 text-sm md:text-base;
+}
+
+.container .article .p1 {
+  @apply text-xl md:text-2xl font-semibold text-white my-4 md:my-6;
+}
+
+.container .article .p2 {
+  @apply text-Neutral-lightGray opacity-50 text-base;
+}
+
+.white h3 {
+  @apply text-Primary-veryDarkBlackishBlue !important;
+}
+
+.white p {
+  @apply text-Primary-veryDarkGrayishBlue opacity-60 !important;
+}
+
+.white + div .p1 {
+  @apply text-Primary-veryDarkGrayishBlue opacity-90 !important;
+}
+
+.white + div .p2 {
+  @apply text-Primary-veryDarkGrayishBlue opacity-80 !important;
+}
+
+.black {
+  @apply !important;
+}
